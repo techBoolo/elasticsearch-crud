@@ -1,0 +1,14 @@
+http://localhost:9200/posts
+
+-i
+
+POST /_count
+
+// optional
+//{
+//  "query": {
+//    "match_all": {}
+//  }
+//}
+
+

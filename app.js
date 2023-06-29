@@ -24,5 +24,13 @@ app.get('/info', (req, res) => {
 // indices
 app.use('/indices', indicesRoute)
 
+// game of thrones
+app.use('/game-of-thrones', gameOfThronesRoute)
+
+// test 
+app.use('/test', testRoute)
+
+// posts
+app.use('/posts', postRoute)
 
 module.exports = app

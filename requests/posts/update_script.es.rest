@@ -1,0 +1,13 @@
+http://localhost:9200
+
+-i 
+
+POST /posts/_update/Ug1pyYgBFQM-oRZrvPUo
+
+{
+  "script": {
+    "source": "ctx._source.author = \"Jake\"",
+    "lang": "painless" 
+  }
+}
+

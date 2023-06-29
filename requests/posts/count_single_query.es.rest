@@ -1,0 +1,23 @@
+http://localhost:9200/posts
+
+POST /_count
+
+// query with a single field, 
+// correct term
+// type term query does not support multiple fields
+{
+  "query": {
+    "term": {
+      "title.keyword": "fourth post"
+    }
+  }  
+}
+
+// or
+//{
+//  "query": {
+//    "match": {
+//      "title.keyword": "fourth post"
+//    }
+//  }  
+//}

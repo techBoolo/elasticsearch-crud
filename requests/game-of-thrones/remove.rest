@@ -1,0 +1,5 @@
+http://localhost:3001/game-of-thrones
+
+-i
+
+DELETE /xv6KAIkBOFOuS2HDrVtn

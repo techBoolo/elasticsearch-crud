@@ -1,0 +1,9 @@
+http://localhost:3001/posts
+
+POST /
+
+{
+  "author": "jake",
+  "title": "third post",
+  "content": "content of the third post"
+}

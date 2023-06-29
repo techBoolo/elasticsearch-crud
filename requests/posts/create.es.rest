@@ -1,0 +1,11 @@
+http://localhost:9200/posts
+
+-i
+
+POST /_doc
+
+{
+  "author": "joe",
+  "title": "fifth post",
+  "content": "content of the fifth post"
+}

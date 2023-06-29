@@ -1,0 +1,8 @@
+http://localhost:3001/game-of-thrones
+
+PUT /xf6KAIkBOFOuS2HDMFuq
+
+{
+  "character": "changed change",
+  "quote": "quote of the character which is changed"
+}

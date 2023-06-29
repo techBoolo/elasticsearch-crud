@@ -1,0 +1,8 @@
+http://localhost:3001/game-of-thrones
+
+POST /
+
+{
+  "character": "char 1",
+  "quote": "quot of char1"
+}

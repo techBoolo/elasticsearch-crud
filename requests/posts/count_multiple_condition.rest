@@ -1,0 +1,33 @@
+http://localhost:9200
+
+
+-i 
+
+POST /posts/_count
+
+{
+  "query": { 
+    "bool": { 
+      "must": [
+        { "term": {
+            "author.keyword": "wills"
+          }
+        },
+        # exact match
+        { "term": 
+          {
+            "title.keyword": "second post"
+          }
+        }
+    # which matches with
+    #    ,
+    #    {
+    #      "match": {
+    #        "content": "content of" 
+    #      } 
+    #    }
+      ]
+    }
+  }
+}
+

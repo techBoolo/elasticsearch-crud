@@ -1,0 +1,5 @@
+http://localhost:9200/posts
+
+-i
+
+GET /_doc/Uw2QyYgBFQM-oRZr-_UQ

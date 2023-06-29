@@ -1,0 +1,8 @@
+http://localhost:3001/test
+
+POST /
+
+{
+  "counter": 1,
+  "tags": ["red"]
+}

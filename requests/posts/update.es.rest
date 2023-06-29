@@ -1,0 +1,9 @@
+http://localhost:9200/posts
+
+POST /_update/eHnK8YgB69x2FXI_TG8-?pretty
+
+{
+  "doc": { 
+    "author": "Joke"  
+  }
+}

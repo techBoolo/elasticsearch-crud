@@ -1,0 +1,8 @@
+http://localhost:3001/game-of-thrones
+
+PATCH /?character=change+of%20to
+
+{
+  "character": "change of char may",
+  "quote": "quote of the char does this change the value"
+}

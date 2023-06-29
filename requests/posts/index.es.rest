@@ -1,0 +1,6 @@
+http://localhost:9200/posts
+
+-i
+
+POST /_search?pretty 
+
