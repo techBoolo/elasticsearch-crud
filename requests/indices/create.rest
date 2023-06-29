@@ -1,0 +1,9 @@
+http://localhost:3001/indices
+
+-i
+
+POST /
+
+{
+  "index": "test"
+}

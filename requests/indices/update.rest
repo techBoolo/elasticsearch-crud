@@ -1,0 +1,7 @@
+use oneof 
+
+client.indices.putsetting()
+client.indices.putmapping()
+
+to update the index info
+

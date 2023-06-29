@@ -1,0 +1,5 @@
+http://localhost:9200
+
+-i 
+
+GET /game-of-thrones

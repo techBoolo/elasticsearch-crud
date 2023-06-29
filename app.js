@@ -21,5 +21,8 @@ app.get('/info', (req, res) => {
   res.status(200).json(client-info)
 })
 
+// indices
+app.use('/indices', indicesRoute)
+
 
 module.exports = app
