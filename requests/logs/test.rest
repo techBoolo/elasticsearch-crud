@@ -1,0 +1,5 @@
+http://localhost:3001/logs
+
+-i
+
+DELETE /iAmDFokBbGrLtC7Emrih
