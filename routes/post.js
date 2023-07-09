@@ -61,7 +61,6 @@ router.route('/posts')
     const queryObject = req.query
     const must = []
     
-    console.log('query', queryObject);
     if(Object.hasOwn(queryObject, 'author')) {
       const authorMatch = { match: { 'author': queryObject['author']}}
       must.push(authorMatch)
@@ -81,18 +80,18 @@ router.route('/posts')
     res.status(200).json(posts)
   })
   .post(async (req, res) => {
-  const body = req.body
-  
-  const result = await createPost(body)
-  // @response
-  // {
-  //  _index: 'posts',
-  //  _id: 'some random string',
-  //  result: 'created'
-  // }
-  // by default it doesn't return the doc so use 
-  // _source: true option to return the created doc
-  res.send(result)
+    const body = req.body
+    
+    const result = await createPost(body)
+    // @response
+    // {
+    //  _index: 'posts',
+    //  _id: 'some random string',
+    //  result: 'created'
+    // }
+    // by default it doesn't return the doc so use 
+    // _source: true option to return the created doc
+    res.send(result)
 })
 
 module.exports = router

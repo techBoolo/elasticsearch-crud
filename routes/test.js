@@ -4,7 +4,7 @@ const client = require('../elastic-client.js')
 const router = express.Router()
 
 // sort options we want to check
-const sortOptions = ['counter']
+const sortOptions = [ 'counter' ]
 
 router.route('/')
   .get(async(req, res) => {

@@ -1,3 +1,5 @@
 http://localhost:3001/indices
 
+-i
+
 GET /

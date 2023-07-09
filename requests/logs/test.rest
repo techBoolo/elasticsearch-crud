@@ -1,5 +1,8 @@
-http://localhost:3001/logs
+http://localhost:3001/logs/test
 
 -i
 
-DELETE /iAmDFokBbGrLtC7Emrih
+POST /ggmtFYkBbGrLtC7Et7jz
+{
+  "name": "john"
+}

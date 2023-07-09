@@ -32,6 +32,8 @@ router.route('/')
     if(Object.keys(query) < 1) {
       throw new Error("please, provide the query")
     }
+
+    // instead of specifying the id, we can use query
     const result = await client.updateByQuery({
       index: 'game-of-thrones',
       script: {

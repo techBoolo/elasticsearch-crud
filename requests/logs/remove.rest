@@ -2,6 +2,4 @@ http://localhost:3001/logs
 
 -i
 
-GET /gQmsFYkBbGrLtC7EJrjG
-
-
+DELETE /iAmDFokBbGrLtC7Emrih

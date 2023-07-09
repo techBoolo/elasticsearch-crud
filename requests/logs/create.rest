@@ -1,0 +1,15 @@
+http://localhost:3001/logs
+
+-i
+
+POST /
+
+{
+  "message": "message with user name",
+  "name": "jake",
+  "tags": [ "elasticsearch" ],
+  "lists": [ { "name": "prog", "desscription": "detail here" }]  
+}
+
+
+

@@ -2,4 +2,4 @@ http://localhost:3001/logs
 
 -i
 
-GET /?tag=wow&size=3.2
+GET /?tag=elasticsearch
