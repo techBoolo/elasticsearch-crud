@@ -1,7 +1,14 @@
-use oneof 
+//use oneof 
+//
+//client.indices.putsetting()
+//client.indices.putmapping()
+//
+//to update the index info
 
-client.indices.putsetting()
-client.indices.putmapping()
+http://localhost:3001/indices
 
-to update the index info
+-i
+
+PATCH /test
+
 

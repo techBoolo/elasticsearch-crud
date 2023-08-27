@@ -1,0 +1,5 @@
+http://localhost:3001/user
+
+-i
+
+DELETE /TG7ngYkBcWvel1S1lqS0

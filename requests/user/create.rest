@@ -1,0 +1,10 @@
+http://localhost:3001/user
+
+-i
+
+POST /
+
+{
+  "name": "sam",
+  "email": "sam@email.com"
+}

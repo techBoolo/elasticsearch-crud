@@ -4,5 +4,6 @@ POST /
 
 {
   "counter": 1,
-  "tags": ["red"]
+  "tags": ["red"],
+  "star": [2]
 }

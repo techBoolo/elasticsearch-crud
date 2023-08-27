@@ -46,21 +46,67 @@ router.route('/')
     res.status(201).json(result)
   })
 
+router.route('/runtime')
+  .get(async (req, res) => {
+    const result = await client.search({
+      index: 'test',
+      size: 0,
+      body: {
+        query: {
+          match_all: {},
+        },
+        fields: ['counter'],
+        _source: false,
+        runtime_mappings: {
+          counter_mttr: {
+            type: 'long',
+            script: {
+              source: "emit(6)"
+            }
+          }
+        },
+        aggs: {
+          total: {
+            terms: { field: 'counter' },
+          },
+          aggs: {
+            top_hits: {}
+          }
+        }
+      }
+    })
+
+    res.status(200).json(result)
+  })
+
 router.route('/:id')
   .put(async (req, res) => {
     const { id } = req.params
-    const { inc, tag } = req.body
+    const { inc, tag, star , user_id} = req.body
 
+    console.log(star, user_id);
     const result = await client.update({
       index: 'test',
       id,
       body: {
         script: {
           lang: 'painless',
-          source: "ctx._source.remove('new_field'); ctx._source.counter += params.inc; if(ctx._source.tags.contains(params.tag)) { ctx._source.tags.remove(ctx._source.tags.indexOf(params.tag))}",
+          source: `
+            if(ctx._source.star == null) {ctx._source.star = new ArrayList() } 
+            if(params.star) {
+              if(!ctx._source.star.contains(params.user_id)) { 
+                ctx._source.star.add(params.user_id)
+              }
+            } else { 
+              if(ctx._source.star.contains(params.user_id)) {
+                ctx._source.star.remove(ctx._source.star.indexOf(params.user_id))
+              }
+            }`,
           params: {
             inc,
-            tag 
+            tag,
+            star,
+            user_id
           }
         }
       }

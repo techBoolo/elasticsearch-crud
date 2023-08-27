@@ -5,5 +5,5 @@ http://localhost:3001/indices
 POST /
 
 {
-  "index": "test"
+  "index": "user"
 }

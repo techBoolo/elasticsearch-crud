@@ -1,0 +1,9 @@
+http://localhost:3001/user
+
+-i
+
+PUT /S27ngYkBcWvel1S1JaRj
+
+{
+  "ticket_created_date": null
+}
